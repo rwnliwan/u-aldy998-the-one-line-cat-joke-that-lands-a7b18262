@@ -42,5 +42,12 @@ differ by a few — python len is the authority used here (C agrees at 94 either
   PASSED (trial-log.md from 2 messages), `thinking_reproduces` 95,9% (71/74 lines,
   main.ts 34 authored lines). Repo pushed, HEAD = ls-remote `ea5269bf…`, tree clean,
   About set + verified (homepage + topics makefun).
-- T3: trial-log revised with real bundle/check v1 results → commit + push → bundle v2
-  + re-check (results to be filled below).
+- T3: trial-log revised with real bundle/check v1 results → commit `91b9692a…` + push
+  (HEAD = ls-remote, tree clean) → bundle v2 `bundle-2-v2.tar.gz` 817.505 B sha256
+  `aaa09afd6ccbd26999c38c2de6dc6b0a867adaa1d58a8ae8d4b855b8bc53def1`;
+  check v2: **13 passed / 1 failed / 5 skipped / 5 at submission** — only
+  `thinking_priced` (0 usage rows, expected; coordinator re-bundles with --muse-usage
+  after this run flushes). `thinking_reproduces` 97,5% (80/82 lines), `thinking_revised`
+  PASS (trial-log from 3 messages). Final state for coordinator: submit commit
+  `91b9692a…` (or newer after T4 below) + re-bundle with usage rows → expect 14/0.
+- T4: this log entry (final results) recorded → commit + push (HEAD final, see report).
