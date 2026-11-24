@@ -34,5 +34,13 @@ differ by a few — python len is the authority used here (C agrees at 94 either
 - T1 (24 Nov ~23:56 WITA): repo-2 built — main.ts (Node 22 stdlib only, authored in this
   session), README with 3 live make.fun badges + 0 static badges (grep verified before commit),
   .makefun/owner.json (wallet agen), LICENSE MIT, trial-log.md. Local run: node main.ts
-  writes the 94-char joke to /output/entry.txt — VERIFIED below.- T2: bundle v1 + check — (to be filled with real results; if thinking_revised fails,
-  genuine fix = revise this log with real bundle/check results, re-commit, re-bundle, re-check).
+  writes the 94-char joke to /output/entry.txt — VERIFIED below.- T2: bundle v1 + check — bundle v1 `bundle-2-v1.tar.gz` 812.532 B sha256
+  `0d3c20ca9f4a4bf6ccd5f85269856d8939b3686ce9e92eee8c251f751d8155eb`;
+  check v1: **13 passed / 1 failed / 5 skipped / 5 at submission** — only
+  `thinking_priced` failed (0 usage rows, expected: builder session rows flush
+  when the run ends; coordinator re-bundles with --muse-usage). `thinking_revised`
+  PASSED (trial-log.md from 2 messages), `thinking_reproduces` 95,9% (71/74 lines,
+  main.ts 34 authored lines). Repo pushed, HEAD = ls-remote `ea5269bf…`, tree clean,
+  About set + verified (homepage + topics makefun).
+- T3: trial-log revised with real bundle/check v1 results → commit + push → bundle v2
+  + re-check (results to be filled below).
